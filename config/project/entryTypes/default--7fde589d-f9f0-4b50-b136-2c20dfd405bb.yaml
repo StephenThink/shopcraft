@@ -1,0 +1,69 @@
+fieldLayouts:
+  a36d09d0-07aa-46e1-921d-c15561a8b5db:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c246408b-7fd6-450e-a0fc-f8189199b3a9
+            warning: null
+            width: 100
+          -
+            fieldUid: 3faf2c98-6780-49aa-9d6c-0029edd46adb # News Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8ea2226f-d01c-4296-9388-a6bbac068ef5
+            warning: null
+            width: 100
+          -
+            fieldUid: 534b7489-9626-4f09-93da-5877e9cdbf05 # News Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c54979dc-d2b3-4133-b798-7d2d50963034
+            warning: null
+            width: 100
+          -
+            fieldUid: 094d54b8-b941-49ca-b046-db456e1c6ffa # News Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1643cde5-ca20-4eca-a94d-7ba9893c4039
+            warning: null
+            width: 100
+        name: Content
+        uid: 3a167d3f-5a87-4b3c-b73f-945fe344bd53
+handle: default
+hasTitleField: true
+name: Default
+section: a021785b-ae2b-4ca7-b44c-f06fb2d0ed93 # News
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

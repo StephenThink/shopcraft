@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: lighting
+name: Lighting
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7fa508e4-f0a5-40b3-8edc-1f4707bd4223: # Shop Craft
+    enabledByDefault: true
+    hasUrls: true
+    template: lighting/_entry
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 8b980305-bbe4-43d4-a2f5-230bb94fc8d9
+type: structure

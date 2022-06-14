@@ -1,0 +1,85 @@
+descriptionFormat: '{product.title} - {title}'
+handle: lighting
+hasDimensions: true
+hasProductTitleField: true
+hasVariantTitleField: true
+hasVariants: true
+name: Lighting
+productFieldLayouts:
+  319ff659-9169-4775-b821-d7ff607b00d7:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 6f676b04-8d70-4879-b838-40e526f41dfd
+            warning: null
+            width: 100
+          -
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 69973e8e-0831-43be-bfdc-d36496e28cad
+            warning: null
+        name: Content
+        uid: bba11b2c-8b2c-4af8-ae33-e4d90b099ddb
+productTitleFormat: ''
+siteSettings:
+  7fa508e4-f0a5-40b3-8edc-1f4707bd4223: # Shop Craft
+    hasUrls: true
+    template: lighting/_product.twig
+    uriFormat: 'lighting/{slug}'
+skuFormat: ''
+variantFieldLayouts:
+  064ebf75-a116-48a2-a050-15be8de89c8d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: 7021c8f0-7b3a-4bf7-b1b2-95d00afeb25e
+            warning: null
+            width: 100
+        name: Content
+        uid: af1a072b-80bd-4add-9578-a1e45cb4d0a1
+variantTitleFormat: '{product.title}'

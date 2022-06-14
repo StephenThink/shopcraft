@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: news
+name: News
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7fa508e4-f0a5-40b3-8edc-1f4707bd4223: # Shop Craft
+    enabledByDefault: true
+    hasUrls: true
+    template: news/_entry
+    uriFormat: 'news/{slug}'
+type: channel

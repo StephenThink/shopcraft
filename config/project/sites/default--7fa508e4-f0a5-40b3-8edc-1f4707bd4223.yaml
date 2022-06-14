@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: 'Shop Craft'
+primary: true
+siteGroup: f35c9c84-6ac3-489a-b664-cc4fffb6dd22 # shopcraft.test
+sortOrder: 1
