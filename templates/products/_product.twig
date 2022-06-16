@@ -1,29 +1,49 @@
 {% extends "_layouts/main" %}
 
 {% block main %}
-    {% set productOptions = craft.variants().id(craft.app.request.getQueryParam('id')).one() %}
-    <h1>{{ product.title }} - £{{ productOptions.price }}</h1>
 
-    <p>{{ productOptions.title }}</p>
 
-    <p>{{ product.wattage }}</p>
+{#    {% set variant = product.defaultVariant %}#}
+{#{% set variant = product.variants() %}#}
+    <div class="flex flex-wrap">
+    {% for variant in product.variants() %}
+        <div class="w-1/4 flex flex-col border border-black rounded-lg">
+            <h1>{{ variant.title }} - £{{ variant.price }}</h1>
 
-    {% for pc in product.colour.all() %}
-        <div>{{ pc.colour }}</div>
-    {% endfor %}
+            <p>{{ product.wattage }}</p>
 
-    {% if product.description %}
-        <p>{{ product.description }}</p>
-    {% endif %}
+            {% if product.colour %}
+                {% for pc in product.colour.all() %}
+                    <div>{{ pc.colour }}</div>
+                {% endfor %}
+            {% endif %}
 
-    {% if product.warrenty %}
-        <p>Warrenty: {{ product.warrenty }}</p>
-    {% endif %}
+            {% if product.description %}
+                <p>{{ product.description }}</p>
+            {% endif %}
 
-    {% if product.productImage.one() %}
-        <img class="w-36 aspect-square" src="{{ product.productImage.one().url() }}" alt="">
-    {% else %}
-        <div class="w-36 aspect-square bg-slate-200 text-center text-9xl text-slate-800 ">?</div>
-    {% endif %}
+            <div>Width: {{ variant.width }}mm</div>
+            <div>Length: {{ variant.length }}mm</div>
+            <div>Height: {{ variant.height }}mm</div>
 
+
+            {% if product.warrenty %}
+                <p>Warrenty: {{ product.warrenty }}</p>
+            {% endif %}
+
+            {% if product.productImage.one() %}
+                <img class="w-36 aspect-square" src="{{ product.productImage.one().url() }}" alt="">
+            {% else %}
+                <div class="w-36 aspect-square bg-slate-200 text-center text-9xl text-slate-800 ">?</div>
+            {% endif %}
+
+            <form class="flex justify-center py-5" method="post">
+                {{ csrfInput() }}
+                {{ actionInput('commerce/cart/update-cart') }}
+                {{ hiddenInput('purchasableId', variant.id) }}
+                <button class="addCart">Add to Cart</button>
+            </form>
+        </div>
+    {%  endfor %}
+    </div>
 {% endblock %}

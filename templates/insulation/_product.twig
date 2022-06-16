@@ -1,10 +1,62 @@
 {% extends "_layouts/main" %}
 
 {% block main %}
-    <h1>{{ product.title }}</h1>
-    <p>{{ product.description }}</p>
-    {% if product.warrenty %}
-    <p>Warrenty: {{ product.warrenty }}</p>
-    {% endif %}
-    <img src="{{ product.productImage.one().url() }}" alt="">
-{%  endblock %}
+
+
+    {#    {% set variant = product.defaultVariant %}#}
+    {#{% set variant = product.variants() %}#}
+    <div class="flex flex-wrap">
+        {% for variant in product.variants() %}
+            <div class="w-1/4 flex flex-col border border-black rounded-lg">
+                <h1>{{ variant.title }} - £{{ variant.price }} - ({{ variant.id }})</h1>
+
+                {% if product.description %}
+                    <p>{{ product.description }}</p>
+                {% endif %}
+
+                <div>Width: {{ variant.width }}mm</div>
+                <div>Length: {{ variant.length }}mm</div>
+                <div>Height: {{ variant.height }}mm</div>
+
+                {% if variant.numberInPack %}
+                    <p>{{ variant.numberInPack }} in a pack.</p>
+                {% endif %}
+
+                {% if product.warrenty %}
+                    <p>Warrenty: {{ product.warrenty }}</p>
+                {% endif %}
+
+                {% if product.productImage.one() %}
+                    <img class="w-36 aspect-square" src="{{ product.productImage.one().url() }}" alt="">
+                {% else %}
+                    <div class="w-36 aspect-square bg-slate-200 text-center text-9xl text-slate-800 ">?</div>
+                {% endif %}
+
+                <form class="flex justify-center py-5" method="post">
+                    {{ csrfInput() }}
+                    {{ actionInput('commerce/cart/update-cart') }}
+                    {{ hiddenInput('purchasableId', variant.id) }}
+                    <button class="addCart">Add to Cart</button>
+                </form>
+            </div>
+        {%  endfor %}
+    </div>
+
+    {% set product = craft.products().one() %}
+
+    <form method="post">
+        {{ csrfInput() }}
+        {{ actionInput('commerce/cart/update-cart') }}
+{#        {{ redirectInput('shop/cart') }}#}
+{#        {{ hiddenInput('successMessage', 'Added ' ~ product.title ~ ' to cart.'|hash) }}#}
+        {{ hiddenInput('qty', 1) }}
+
+        <select name="purchasableId">
+            {% for variant in product.variants %}
+                <option value="{{ variant.id }}">{{ variant.title }}</option>
+            {% endfor %}
+        </select>
+        <button class="addCart">Add to Cart</button>
+    </form>
+
+{% endblock %}

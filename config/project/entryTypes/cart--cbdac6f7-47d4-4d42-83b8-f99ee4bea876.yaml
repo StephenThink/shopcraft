@@ -1,0 +1,39 @@
+fieldLayouts:
+  ca1ef308-07f4-4179-9f85-4977184f6c28:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 10b3500e-0304-47e5-9170-98c7fc6c71b8
+            warning: null
+            width: 100
+        name: Content
+        uid: 0f2f8d4f-2831-469e-a1e9-7a6eb0de7e21
+handle: cart
+hasTitleField: false
+name: Cart
+section: 9a400b2f-1a31-4045-92dd-c27a71d90e9b # Cart
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -11,10 +11,17 @@
             <div class="font-bold">{{ type.handle }} - {{ type.name }}</div>
             <div class="flex flex-wrap">
                 {% for product in craft.products().type(type.handle).all %}
-                    <div><a href="{{ product.url }}">
+                    {% set variant = product.defaultVariant %}
+                    <div>
+                        <a href="{{ product.url }}">
                             <div class="text-sm text-indigo-400">{{ product.title }}</div>
+
                             <img class="aspect-square w-56" src="{{ product.productImage.one.url() }}" alt="">
                         </a>
+
+
+
+
                     </div>
                 {% endfor %}
             </div>

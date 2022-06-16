@@ -1,0 +1,20 @@
+columnSuffix: xwscpjow
+contentColumnType: integer(10)
+fieldGroup: ae90dc43-b53e-45f9-9116-0bb4a8a4177c # Products
+handle: numberInPack
+instructions: null
+name: 'Number in Pack'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: 1
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

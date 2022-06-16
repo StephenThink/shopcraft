@@ -2,8 +2,8 @@ descriptionFormat: '{product.title} - {title}'
 handle: insulation
 hasDimensions: true
 hasProductTitleField: true
-hasVariantTitleField: false
-hasVariants: false
+hasVariantTitleField: true
+hasVariants: true
 name: Insulation
 productFieldLayouts:
   8656a0c1-accf-44a6-8519-e6daffbc6804:
@@ -78,7 +78,48 @@ productTitleFormat: ''
 siteSettings:
   7fa508e4-f0a5-40b3-8edc-1f4707bd4223: # Shop Craft
     hasUrls: true
-    template: products/_product.twig
+    template: insulation/_product.twig
     uriFormat: 'insulation/{slug}'
 skuFormat: ''
+variantFieldLayouts:
+  a916f3f0-a3f3-418f-97cb-5bf9a67e6d6d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 07058afe-ea09-490c-ae58-9ba32a8f37a7 # Qty
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51284fdf-2c23-4656-8db1-32a06bc27a99
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: 3a8810a3-afb3-4739-8552-08e256d32220
+            warning: null
+            width: 100
+        name: Content
+        uid: 1b695a55-b2ff-49d8-a0bc-a0ed79b585a8
 variantTitleFormat: '{product.title}'

@@ -1,0 +1,28 @@
+{#            First Column #}
+JCS Logo
+<div class="font-bold pt-8">Feel free to contact us by telephone or email</div>
+{# This gets the store address from the ecommence #}
+                {% set storeAddress = craft.commerce
+                    .getStore()
+                    .getStore()
+                    .getLocationAddress() %}
+
+<div>{{ storeAddress.title }}</div>
+<div>{{ storeAddress.addressLine1 }}</div>
+<div>{{ storeAddress.addressLine2 }}</div>
+<div>{{ storeAddress.locality }}</div>
+<div>{{ storeAddress.postalCode }}</div>
+
+
+<div class="pt-8">Tel : (+44) 01253 864902</div>
+<div>Tel : (+44) 01253 864901</div>
+<div class="font-bold pt-12">Follow us on Social Media</div>
+<div class="flex space-x-4 pt-4">
+
+
+    {% for social in footer.socialIcons.all() %}
+        {#                        {% if social.type =='socialicon' %}#}
+        <a href="{{ social.socialLink }}"><img src="{{social.socialImage.one().url('socialIcons')}}" alt=""></a>
+        {#                        {% endif %}#}
+    {% endfor %}
+</div>
