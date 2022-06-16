@@ -1,0 +1,131 @@
+description: ''
+handle: storeManager
+name: 'Store Manager'
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accessplugin-commerce
+  - accessplugin-feed-me
+  - accessplugin-seomatic
+  - accesssitewhensystemisoff
+  - administrateusers
+  - 'assignusergroup:41af5817-384b-44da-b017-be654cf3e9ca' # Store Manager
+  - assignuserpermissions
+  - commerce-capturepayment
+  - commerce-creatediscounts
+  - 'commerce-createproducts:9853a717-bf88-4c9b-8f8c-08346a3a329c' # Lighting
+  - commerce-createsales
+  - commerce-deletediscounts
+  - commerce-deleteorders
+  - 'commerce-deleteproducts:9853a717-bf88-4c9b-8f8c-08346a3a329c' # Lighting
+  - commerce-deletesales
+  - commerce-editdiscounts
+  - commerce-editorders
+  - 'commerce-editproducttype:9853a717-bf88-4c9b-8f8c-08346a3a329c' # Lighting
+  - commerce-editsales
+  - commerce-manageorders
+  - commerce-managepromotions
+  - commerce-manageshipping
+  - commerce-managestoresettings
+  - commerce-managesubscriptions
+  - commerce-managetaxes
+  - commerce-refundpayment
+  - 'createentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'createentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'createfolders:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'createfolders:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'deleteassets:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'deleteassets:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'deleteentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'deleteentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'deletepeerassets:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'deletepeerassets:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'deletepeerentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'deletepeerentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'deletepeerentrydrafts:093cebf3-b3f1-4433-a114-0c732a91de91' # Contact
+  - 'deletepeerentrydrafts:3bf2d87c-5779-4157-b511-a029b2cac431' # Homepage
+  - 'deletepeerentrydrafts:7eebd11e-6ed4-4dd7-a36d-b317b058f0bd' # Downloads
+  - 'deletepeerentrydrafts:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'deletepeerentrydrafts:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - deleteusers
+  - 'editglobalset:977d4522-6445-4b9f-b396-3a1319545bbd' # Footer
+  - 'editimages:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'editimages:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'editpeerimages:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'editpeerimages:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - editusers
+  - impersonateusers
+  - moderateusers
+  - performupdates
+  - registerusers
+  - 'replacefiles:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'replacefiles:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'replacepeerfiles:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'replacepeerfiles:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'saveassets:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'saveassets:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'saveentries:093cebf3-b3f1-4433-a114-0c732a91de91' # Contact
+  - 'saveentries:3bf2d87c-5779-4157-b511-a029b2cac431' # Homepage
+  - 'saveentries:7eebd11e-6ed4-4dd7-a36d-b317b058f0bd' # Downloads
+  - 'saveentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'saveentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'savepeerassets:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'savepeerassets:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'savepeerentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'savepeerentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'savepeerentrydrafts:093cebf3-b3f1-4433-a114-0c732a91de91' # Contact
+  - 'savepeerentrydrafts:3bf2d87c-5779-4157-b511-a029b2cac431' # Homepage
+  - 'savepeerentrydrafts:7eebd11e-6ed4-4dd7-a36d-b317b058f0bd' # Downloads
+  - 'savepeerentrydrafts:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'savepeerentrydrafts:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'seomatic:content-meta'
+  - 'seomatic:content-meta:facebook'
+  - 'seomatic:content-meta:general'
+  - 'seomatic:content-meta:sitemap'
+  - 'seomatic:content-meta:twitter'
+  - 'seomatic:dashboard'
+  - 'seomatic:global-meta'
+  - 'seomatic:global-meta:ads'
+  - 'seomatic:global-meta:facebook'
+  - 'seomatic:global-meta:general'
+  - 'seomatic:global-meta:humans'
+  - 'seomatic:global-meta:robots'
+  - 'seomatic:global-meta:security'
+  - 'seomatic:global-meta:twitter'
+  - 'seomatic:plugin-settings'
+  - 'seomatic:site-settings'
+  - 'seomatic:site-settings:creator'
+  - 'seomatic:site-settings:identity'
+  - 'seomatic:site-settings:miscellaneous'
+  - 'seomatic:site-settings:sitemap'
+  - 'seomatic:site-settings:social'
+  - 'seomatic:tracking-scripts'
+  - 'seomatic:tracking-scripts:facebookpixel'
+  - 'seomatic:tracking-scripts:fathom'
+  - 'seomatic:tracking-scripts:googleanalytics'
+  - 'seomatic:tracking-scripts:googletagmanager'
+  - 'seomatic:tracking-scripts:gtag'
+  - 'seomatic:tracking-scripts:hubspot'
+  - 'seomatic:tracking-scripts:linkedininsight'
+  - 'seomatic:tracking-scripts:matomo'
+  - 'seomatic:tracking-scripts:pinteresttag'
+  - 'seomatic:tracking-scripts:plausible'
+  - 'utility:clear-caches'
+  - 'utility:db-backup'
+  - 'utility:find-replace'
+  - 'viewassets:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'viewassets:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'viewentries:093cebf3-b3f1-4433-a114-0c732a91de91' # Contact
+  - 'viewentries:3bf2d87c-5779-4157-b511-a029b2cac431' # Homepage
+  - 'viewentries:7eebd11e-6ed4-4dd7-a36d-b317b058f0bd' # Downloads
+  - 'viewentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'viewentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'viewpeerassets:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+  - 'viewpeerassets:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+  - 'viewpeerentries:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'viewpeerentries:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting
+  - 'viewpeerentrydrafts:093cebf3-b3f1-4433-a114-0c732a91de91' # Contact
+  - 'viewpeerentrydrafts:3bf2d87c-5779-4157-b511-a029b2cac431' # Homepage
+  - 'viewpeerentrydrafts:7eebd11e-6ed4-4dd7-a36d-b317b058f0bd' # Downloads
+  - 'viewpeerentrydrafts:a021785b-ae2b-4ca7-b44c-f06fb2d0ed93' # News
+  - 'viewpeerentrydrafts:f0b1f77b-fbf2-4b2a-adf6-f33ba62710f3' # Lighting

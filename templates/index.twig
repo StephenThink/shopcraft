@@ -1,6 +1,25 @@
 {% extends "_layouts/main" %}
 
 {% block main %}
-<h1>{{ entry.title }}</h1>
+
+    {% set lighting = craft.products()
+        .type('lighting')
+        .all() %}
+
+    <div class="flex flex-col">
+        {% for type in craft.commerce.productTypes.allProductTypes %}
+            <div class="font-bold">{{ type.handle }} - {{ type.name }}</div>
+            <div class="flex flex-wrap">
+                {% for product in craft.products().type(type.handle).all %}
+                    <div><a href="{{ product.url }}">
+                            <div class="text-sm text-indigo-400">{{ product.title }}</div>
+                            <img class="aspect-square w-56" src="{{ product.productImage.one.url() }}" alt="">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
 
 {% endblock %}

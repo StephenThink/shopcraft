@@ -1,0 +1,84 @@
+descriptionFormat: '{product.title} - {title}'
+handle: insulation
+hasDimensions: true
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: false
+name: Insulation
+productFieldLayouts:
+  8656a0c1-accf-44a6-8519-e6daffbc6804:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 2a0a6d1d-e2d6-4648-b74e-1dc3a21a0029
+            warning: null
+            width: 100
+          -
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 89b99c65-65f4-4685-b789-9cbda4b5934d
+            warning: null
+          -
+            fieldUid: 54ce4837-0c4f-424c-968a-63e08ea8c9a8 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e81a82ac-4cf4-4dbe-8011-7072f6d8772e
+            warning: null
+            width: 100
+          -
+            fieldUid: 3ba4ab90-24b0-4020-8c1a-6dbf403f64e7 # Warrenty
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59470e22-e29f-4632-bbb3-3ce70b679260
+            warning: null
+            width: 100
+          -
+            fieldUid: b405e1f9-c46b-4acd-a815-9f87af856075 # Product Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c32cd71f-8b29-4911-b3af-97c9d9be3487
+            warning: null
+            width: 100
+        name: Content
+        uid: 7ceeb66c-f575-42bf-9f4c-d499398f132e
+productTitleFormat: ''
+siteSettings:
+  7fa508e4-f0a5-40b3-8edc-1f4707bd4223: # Shop Craft
+    hasUrls: true
+    template: products/_product.twig
+    uriFormat: 'insulation/{slug}'
+skuFormat: ''
+variantTitleFormat: '{product.title}'

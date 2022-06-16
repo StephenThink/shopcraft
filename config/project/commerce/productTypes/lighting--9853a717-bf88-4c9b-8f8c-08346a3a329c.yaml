@@ -42,13 +42,63 @@ productFieldLayouts:
             type: craft\commerce\fieldlayoutelements\VariantsField
             uid: 69973e8e-0831-43be-bfdc-d36496e28cad
             warning: null
+          -
+            fieldUid: 70efd76b-1a45-4d21-b91c-b2f42ac298e1 # Colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bb49a10-3f74-479e-9824-a4fbddea637b
+            warning: null
+            width: 100
+          -
+            fieldUid: 7bcacb04-5b80-41fe-bbe5-2073a96828ab # Wattage
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55655928-2ccc-4379-b905-ffde1ed6d4e0
+            warning: null
+            width: 100
+          -
+            fieldUid: 3ba4ab90-24b0-4020-8c1a-6dbf403f64e7 # Warrenty
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe7a655f-f661-42be-a05b-370d35549595
+            warning: null
+            width: 100
+          -
+            fieldUid: 54ce4837-0c4f-424c-968a-63e08ea8c9a8 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a64750dd-a4a4-4626-97b5-cb0ee0fe6d96
+            warning: null
+            width: 100
+          -
+            fieldUid: b405e1f9-c46b-4acd-a815-9f87af856075 # Product Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efe55a4a-e33b-4b30-a9b1-0453ab7f72f2
+            warning: null
+            width: 100
         name: Content
         uid: bba11b2c-8b2c-4af8-ae33-e4d90b099ddb
 productTitleFormat: ''
 siteSettings:
   7fa508e4-f0a5-40b3-8edc-1f4707bd4223: # Shop Craft
     hasUrls: true
-    template: lighting/_product.twig
+    template: products/_product.twig
     uriFormat: 'lighting/{slug}'
 skuFormat: ''
 variantFieldLayouts:

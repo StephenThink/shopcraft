@@ -1,0 +1,19 @@
+columnSuffix: udwibxwr
+contentColumnType: text
+fieldGroup: ae90dc43-b53e-45f9-9116-0bb4a8a4177c # Products
+handle: warrenty
+instructions: null
+name: Warrenty
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

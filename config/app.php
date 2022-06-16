@@ -24,5 +24,22 @@ return [
     'modules' => [
         'my-module' => \modules\Module::class,
     ],
+    'components' => [
+        'plugins' => [
+            'pluginConfigs' => [
+                'commerce' => [
+                    'components' => [
+                        'carts' => [
+                            'cartCookie' => [
+                                // Add custom key-value cookie params
+                            ],
+                            // Set the cart expiry to one month
+                            'cartCookieDuration' => 2629800,
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
     //'bootstrap' => ['my-module'],
 ];

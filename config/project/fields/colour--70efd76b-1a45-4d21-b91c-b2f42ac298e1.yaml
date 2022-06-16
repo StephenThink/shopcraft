@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 89e3e446-b21f-4add-8030-7e0a70874704 # Footer
-handle: socialIcons
+fieldGroup: ae90dc43-b53e-45f9-9116-0bb4a8a4177c # Products
+handle: colour
 instructions: null
-name: 'Social Icons'
-searchable: false
+name: Colour
+searchable: true
 settings:
-  contentTable: '{{%matrixcontent_socialicons}}'
+  contentTable: '{{%matrixcontent_colour}}'
   maxBlocks: null
   minBlocks: 1
   propagationKeyFormat: null

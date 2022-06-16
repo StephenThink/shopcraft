@@ -76,9 +76,12 @@
                 <div>Tel : (+44) 01253 864901</div>
                 <div class="font-bold pt-12">Follow us on Social Media</div>
                 <div class="flex space-x-4 pt-4">
-                    {% set socialBlock = craft.matrixBlocks() %}
-                    {% for social in socialBlock.all() %}
-                        <a href="{{ social.socialLink }}"><img src="{{ social.socialImage.one().url() }}" alt=""></a>
+
+
+                    {% for social in footer.socialIcons.all() %}
+{#                        {% if social.type =='socialicon' %}#}
+                        <a href="{{ social.socialLink }}"><img src="{{social.socialImage.one().url('socialIcons')}}" alt=""></a>
+{#                        {% endif %}#}
                     {% endfor %}
                 </div>
             </div>

@@ -1,0 +1,39 @@
+fieldLayouts:
+  3976916c-ac62-4be6-a5c6-6a19ff2e8614:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 679cd60e-b995-40f8-bbe4-38b6c5ac693e
+            warning: null
+            width: 100
+        name: Content
+        uid: b48b6607-0f51-470d-8eb6-487491bcb39d
+handle: default
+hasTitleField: true
+name: Default
+section: f35095cc-d353-486c-b0db-6b4e54964845 # Insulation
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
