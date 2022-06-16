@@ -1,0 +1,20 @@
+{% extends "_layouts/main" %}
+
+{% block main %}
+
+    <div class="max-w-7xl mx-auto">
+        {% for item in craft.entries.section('news').all() %}
+            <a class="p-3 " href="{{ item.url }}">
+                <div class="flex space-x-4 border border-black rounded-lg">
+                    <img class="" src="{{ item.newsImage.one().url('newsThumb') }}" alt="">
+                    <div class="flex flex-col">
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.newsContent }}</p>
+                        <p>{{ item.postDate|date('M j, Y') }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+{% endblock %}

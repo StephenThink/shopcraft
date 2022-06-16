@@ -1,18 +1,143 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
     <title>Welcome to Craft CMS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+    <meta name="referrer" content="origin-when-cross-origin"/>
+    <link rel="stylesheet" href="/css/tailwind.css">
 </head>
-<body class="ltr">
-<div id="container">
+<body>
+<div class="bg-red-600 h-16">
+    Navbar
+</div>
+<div class="bg-blue-400 h-32">
+    Mega Menu
+</div>
+<div class="bg-slate-400 h-24">
+    Hero
+</div>
 
+<div id="container">
     {% block main %}
 
     {% endblock %}
 </div>
+
+<brands>
+    <div class="bg-pink-400 w-full py-3">
+        <div class="flex w-8/12 space-x-4 justify-center mx-auto">
+            <div class="border border-slate-800 rounded-lg w-1/6 h-32 p-4">Brand</div>
+            <div class="border border-slate-800 rounded-lg w-1/6 h-32 p-4">Brand</div>
+            <div class="border border-slate-800 rounded-lg w-1/6 h-32 p-4">Brand</div>
+            <div class="border border-slate-800 rounded-lg w-1/6 h-32 p-4">Brand</div>
+        </div>
+    </div>
+</brands>
+
+
+<reviews>
+    <div class="bg-indigo-400 w-full py-3">
+        <div class="flex w-8/12 space-x-4 justify-center mx-auto">
+            <div class="border border-slate-800 rounded-lg w-1/4 h-64 p-4">Review</div>
+            <div class="border border-slate-800 rounded-lg w-1/4 h-64 p-4">Review</div>
+            <div class="border border-slate-800 rounded-lg w-1/4 h-64 p-4">Review</div>
+        </div>
+    </div>
+</reviews>
+
+
+<footer class="w-full">
+    <div class="bg-gray-200 flex flex-col items-center justify-center py-12">
+        <form class="pb-24 w-6/12" action="">
+            <input class="w-full " type="text">
+        </form>
+        <div class="grid grid-flow-col w-8/12 mx-auto">
+            <div class="flex flex-col ">
+                {#            First Column #}
+                JCS Logo
+                <div class="font-bold pt-8">Feel free to contact us by telephone or email</div>
+                {# This gets the store address from the ecommence #}
+                {% set storeAddress = craft.commerce
+                    .getStore()
+                    .getStore()
+                    .getLocationAddress() %}
+
+                <div>{{ storeAddress.title }}</div>
+                <div>{{ storeAddress.addressLine1 }}</div>
+                <div>{{ storeAddress.addressLine2 }}</div>
+                <div>{{ storeAddress.locality }}</div>
+                <div>{{ storeAddress.postalCode }}</div>
+
+
+                <div class="pt-8">Tel : (+44) 01253 864902</div>
+                <div>Tel : (+44) 01253 864901</div>
+                <div class="font-bold pt-12">Follow us on Social Media</div>
+                <div class="flex space-x-4 pt-4">
+                    {% set socialBlock = craft.matrixBlocks() %}
+                    {% for social in socialBlock.all() %}
+                        <a href="{{ social.socialLink }}"><img src="{{ social.socialImage.one().url() }}" alt=""></a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="flex flex-col space-y-2">
+                {#            Second Column #}
+                <div class="font-bold">Product Information</div>
+                <div>All Product Information</div>
+                <div>What Tile Do I Need</div>
+                <div>Ceiling Tiles</div>
+                <div>Grids</div>
+                <div>Insulation</div>
+                <div>Lighting & Diffusers</div>
+                <div>Suspended Ceilings</div>
+                <div>Partitioning</div>
+                <div>By Brand</div>
+                <div>Testimonials</div>
+            </div>
+            <div class="flex flex-col space-y-2">
+                {#            Third Column #}
+                <div class="font-bold">Account Information</div>
+                <div>My Account</div>
+                <div>Login</div>
+                <div>Register</div>
+                <div>FAQ</div>
+                <div>Contact Us</div>
+                <div>Refunds Policy</div>
+                <div>Delivery</div>
+                <div>Terms & Conditions</div>
+                <div>Affiliates</div>
+                <div>Privacy Policy</div>
+
+            </div>
+            <div class="flex flex-col">
+                {#            Fourth Column #}
+                <div class="font-bold"><a href="/news">Latest News</a></div>
+                <div class="">
+                    {% for item in craft.entries.section('news').limit(3).all() %}
+                        <a href="{{ item.url }}">
+                            <div class="py-3">
+                                <h3>{{ item.title }}</h3>
+                                <p>{{ item.newsContent }}</p>
+                                <p>{{ item.postDate|date('M j, Y') }}</p>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-slate-800 w-full text-slate-400">
+        <div class="flex justify-between w-6/12 mx-auto py-3">
+            <div class="">
+                Think!Creative
+            </div>
+            <div>Payment Types</div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

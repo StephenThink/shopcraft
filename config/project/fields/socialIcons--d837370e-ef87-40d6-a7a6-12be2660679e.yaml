@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 89e3e446-b21f-4add-8030-7e0a70874704 # Footer
+handle: socialIcons
+instructions: null
+name: 'Social Icons'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_socialicons}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

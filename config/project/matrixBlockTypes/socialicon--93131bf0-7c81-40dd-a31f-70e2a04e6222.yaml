@@ -1,0 +1,95 @@
+field: d837370e-ef87-40d6-a7a6-12be2660679e # Social Icons
+fieldLayouts:
+  04c60f85-152f-4017-8a9e-749373997d1b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 521b4746-e762-46dd-aba2-bd3c1985b019 # Social Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a942808-55c9-4ec1-873d-65bc3a384ac5
+            warning: null
+            width: 25
+          -
+            fieldUid: 33824e50-f231-4270-9fa1-ef2dc9a72166 # Social Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 737d5de5-da7b-4df5-afef-a8906db229a0
+            warning: null
+            width: 75
+        name: Content
+        uid: f712eb81-9665-4ffa-9778-cd13748f8033
+fields:
+  521b4746-e762-46dd-aba2-bd3c1985b019: # Social Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: socialImage
+    instructions: null
+    name: 'Social Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:5eb74ee9-5d9a-4b4b-b9b1-6e085999d2c3' # News
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:62ebf201-3153-40ee-936a-292818f77a38' # Socials
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  33824e50-f231-4270-9fa1-ef2dc9a72166: # Social Link
+    columnSuffix: ajyknwuu
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: socialLink
+    instructions: null
+    name: 'Social Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: socialicon
+name: SocialIcon
+sortOrder: 1

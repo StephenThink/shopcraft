@@ -1,0 +1,39 @@
+fieldLayouts:
+  a9233176-2be9-4031-84cc-4933e2b6a20e:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: e0c87956-761c-4ef3-b609-38584c515d67
+            warning: null
+            width: 100
+        name: Content
+        uid: c87dcbba-0814-4941-b03a-88c921ca3ad3
+fs: socials
+handle: socials
+name: Socials
+sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

@@ -1,0 +1,20 @@
+fieldLayouts:
+  51393261-b241-4f2d-a091-6cf506f74408:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d837370e-ef87-40d6-a7a6-12be2660679e # Social Icons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3cafbb21-b010-42ee-9941-b6f9a90eb689
+            warning: null
+            width: 100
+        name: Socials
+        uid: 0def82f7-4430-4dc9-bdbf-1c6b0d3c717b
+handle: footer
+name: Footer
+sortOrder: 1
